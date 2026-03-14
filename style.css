@@ -1,0 +1,197 @@
+/* Basic Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* Navigation */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+background:#111;
+color:white;
+padding:15px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+}
+
+.nav-links li{
+margin-left:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:80px;
+background:#f4f4f4;
+}
+
+.cta-btn{
+padding:10px 20px;
+background:black;
+color:white;
+border:none;
+margin-top:10px;
+}
+
+/* Products */
+
+.products{
+padding:40px;
+text-align:center;
+}
+
+.product-grid{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.product{
+border:1px solid #ddd;
+padding:20px;
+}
+
+/* Newsletter */
+
+.newsletter{
+background:#eee;
+padding:40px;
+text-align:center;
+}
+
+/* CONTACT PAGE STYLING */
+
+.contact-info{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.contact-form{
+    text-align:center;
+    padding:40px 20px;
+}
+
+/* form layout */
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:350px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:14px;
+}
+
+.contact-form button{
+    padding:10px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+
+/* HELP SECTION */
+
+.help-section{
+    text-align:center;
+    padding:40px 20px;
+    background:#f4f4f4;
+}
+
+
+/* REVIEW SECTION */
+
+.review-section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.review-section form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:350px;
+    margin:auto;
+}
+
+.review-section input,
+.review-section textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.review-section button{
+    padding:10px;
+    background:black;
+    color:white;
+    border:none;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter{
+    text-align:center;
+    padding:40px 20px;
+    background:#eee;
+}
+
+.newsletter input{
+    padding:10px;
+    width:250px;
+}
+
+.newsletter button{
+    padding:10px 15px;
+    background:black;
+    color:white;
+    border:none;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+align-items:center;
+}
+
+.product-grid{
+flex-direction:column;
+}
+
+}
