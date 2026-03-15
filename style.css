@@ -95,34 +95,45 @@ body {
 /* Product Grid ko manage karne ke liye */
 /* 1. Sabse pehle poore grid ko flex banayein */
 /* 1. Grid setup - Isse images ek line mein rahengi */
+/* Container jo products ko hold karta hai */
 .product-grid {
     display: grid;
-    /* Is line se ek line mein 3 products aayenge (300px ke) */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    padding: 40px;
-    width: 90%;
-    margin: 0 auto; /* Center mein rakhne ke liye */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ye line magic hai */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* 2. Product card ki settings */
+/* Individual Product Card */
 .product {
-    background: #fff;
     border: 1px solid #ddd;
     padding: 15px;
-    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    transition: transform 0.3s;
+    background: #fff;
 }
 
-/* 3. Image ko failne se rokne ke liye */
+/* Image responsive banane ke liye */
 .product img {
-    width: 100%;       /* Card ki width ke andar rahegi */
-    height: 320px;      /* Sabki height ek jaisi */
-    object-fit: cover;  /* Crop hokar set hogi, stretch nahi hogi */
-    display: block;
-    margin: 0 auto 15px;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Jab screen 600px se choti ho (Mobile) */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Mobile par sirf ek card ek line mein */
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
 }
 /* Newsletter */
 .newsletter {
