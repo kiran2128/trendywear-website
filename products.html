@@ -3,52 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | TrendyWear</title>
-    <meta name="description" content="Explore our latest fashion products including jackets, shirts and shoes.">
+    <title>Collections | STRAYA Modern Fashion</title>
+    <meta name="description" content="Explore the STRAYA seasonal edit. From signature denim to premium streetwear essentials, find your perfect fit here.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <nav class="navbar">
-        <h1 class="logo">TrendyWear</h1>
+        <h1 class="logo">STRAYA</h1>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="cart.html" id="cart-count-nav">Cart</a></li> 
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <section class="products-section">
-    <h1>Our Products</h1>
+    <h1 class="section-title">The Curated Collection</h1>
     
     <div class="product-grid">
-        <div class="product">
-            <img src="image/shirt.jpg" alt="White Shirt">
-            <h3>Stylish Shirt</h3>
-            <p>Rs. 3,500</p>
-            <button class="cta-btn" onclick="addToCart('Stylish Shirt', 3500)">Add to Cart</button>
-        </div>
+        <article class="product">
+            <img src="image/shirt.jpg" alt="STRAYA Minimalist White Shirt">
+            <h3>Oxford Minimalist Shirt</h3>
+            <p class="price">Rs. 1,500</p>
+            <button class="cta-btn" onclick="addToCart('Oxford Minimalist Shirt', 3500)">Add to Cart</button>
+        </article>
 
-        <div class="product">
-            <img src="image/hoodie.jpg" alt="Hoodie">
-            <h3>Hoodie</h3>
-            <p>Rs. 1,999</p>
-            <button class="cta-btn" onclick="addToCart('Hoodie', 1999)">Add to Cart</button>
-        </div>
+        <article class="product">
+            <img src="image/hoodie.jpg" alt="STRAYA Premium Oversized Hoodie">
+            <h3>Premium Studio Hoodie</h3>
+            <p class="price">Rs. 1,999</p>
+            <button class="cta-btn" onclick="addToCart('Premium Studio Hoodie', 1999)">Add to Cart</button>
+        </article>
 
-        <div class="product">
-            <img src="image/tshirt.jpg" alt="T-shirt">
-            <h3>Gen-z Tshirt</h3>
-            <p>Rs. 799</p>
-            <button class="cta-btn" onclick="addToCart('Gen-z Tshirt', 799)">Add to Cart</button>
-        </div>
+        <article class="product">
+            <img src="image/tshirt.jpg" alt="STRAYA Essential Streetwear Tee">
+            <h3>Essential Streetwear Tee</h3>
+            <p class="price">Rs. 799</p>
+            <button class="cta-btn" onclick="addToCart('Essential Streetwear Tee', 799)">Add to Cart</button>
+        </article>
     </div> 
 </section>
+
+<footer>
+    <p>© 2026 STRAYA | Defined by Kiran </p>
+</footer>
 
 <script src="script.js"></script> 
 </body>
